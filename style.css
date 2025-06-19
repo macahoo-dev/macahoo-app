@@ -1,107 +1,78 @@
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f9fafb;
+  background: #f9fafb;
   color: #1f2937;
 }
 .hero {
   background: linear-gradient(to right, #e0f0ff, #eaf3fb);
-  padding: 60px 20px;
+  padding: 60px 10%;
   text-align: center;
+  position: relative;
 }
-.hero-content {
-  max-width: 700px;
-  margin: auto;
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
-.logo {
-  height: 60px;
-  margin-bottom: 20px;
+.language-switcher button {
+  background: none;
+  border: none;
+  margin-left: 8px;
+  font-weight: bold;
+  color: #2563eb;
+  cursor: pointer;
+}
+.hero-image {
+  max-width: 280px;
+  margin: 30px auto 0;
 }
 h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+  font-size: 2.4rem;
 }
 p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
 }
 .cta-button {
   background: #2563eb;
   color: white;
   padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
+  border-radius: 6px;
   font-weight: 600;
-  display: inline-block;
   margin-top: 20px;
-  transition: background 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 .cta-button:hover {
   background: #1e40af;
 }
-.cta-button.large {
-  font-size: 1.2rem;
-  padding: 16px 32px;
-}
-main {
-  padding: 40px 20px;
-}
-.section-title {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1d4ed8;
-  margin-bottom: 2rem;
-}
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-.card {
-  background: #ffffff;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-  text-align: center;
-  transition: transform 0.2s ease;
-}
-.card:hover {
-  transform: translateY(-4px);
-}
-.card i {
-  font-size: 2rem;
-  color: #2563eb;
-  margin-bottom: 12px;
-}
-.cta-section {
-  background-color: #f1f5f9;
-  text-align: center;
+.beta {
+  background: #e0f2ff;
   padding: 60px 20px;
+  text-align: center;
+}
+.beta-form {
+  margin-top: 20px;
+}
+.beta-form input {
+  padding: 12px;
+  width: 260px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.beta-form button {
+  margin-left: 10px;
 }
 footer {
   text-align: center;
   padding: 40px 20px;
-  background-color: #ffffff;
+  background: #fff;
   border-top: 1px solid #e5e7eb;
   color: #6b7280;
 }
 footer .socials a {
   color: #2563eb;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin: 0 10px;
-  text-decoration: none;
-}
-footer .socials a:hover {
-  color: #1e40af;
-}
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
 }

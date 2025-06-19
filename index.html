@@ -1,83 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Macahoo – The Future of Marketplaces</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <title>Macahoo – Marketplace communautaire</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="hero">
-    <div class="hero-content">
-      <img src="https://macahoo-dev.github.io/macahoo-app/logo.png" alt="Macahoo logo" class="logo" />
-      <h1>The future of community marketplaces, powered by NFTs and crypto</h1>
-      <p>Macahoo enhances trust, rewards participation, and increases transparency for peer-to-peer buying and selling.</p>
-      <a href="#cta" class="cta-button">Join Macahoo Now</a>
+    <div class="language-switcher">
+      <button onclick="switchLanguage('fr')">FR</button>
+      <button onclick="switchLanguage('en')">EN</button>
     </div>
+    <div class="hero-content">
+      <h1 id="title">La marketplace nouvelle génération</h1>
+      <p id="subtitle">Macahoo combine NFT, crypto, et gamification pour créer un espace d’échange plus fiable et attractif.</p>
+      <a href="#beta" class="cta-button" id="ctaJoin">Rejoindre la communauté</a>
+    </div>
+    <img src="mobile-preview.png" alt="Aperçu application mobile" class="hero-image">
   </header>
 
-  <main>
-    <section class="features">
-      <div class="section-title">Core Features</div>
-      <div class="card-grid">
-        <div class="card">
-          <i class="fa-solid fa-id-badge"></i>
-          <h3>NFT Badges</h3>
-          <p>Earn non-transferable badges that reflect identity, reputation, and trust.</p>
-        </div>
-        <div class="card">
-          <i class="fa-solid fa-coins"></i>
-          <h3>$MACO Token</h3>
-          <p>Used for transactions, boosts, fees, and staking rewards.</p>
-        </div>
-        <div class="card">
-          <i class="fa-solid fa-gamepad"></i>
-          <h3>Gamification</h3>
-          <p>Engage with missions, challenges, and earn ranks in the community.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="benefits">
-      <div class="section-title">User Benefits</div>
-      <div class="card-grid">
-        <div class="card">
-          <i class="fa-solid fa-lock-open"></i>
-          <h3>Unlock Features</h3>
-          <p>Get access to exclusive boosts, badges, and VIP options.</p>
-        </div>
-        <div class="card">
-          <i class="fa-solid fa-gift"></i>
-          <h3>Monthly Rewards</h3>
-          <p>Receive bonuses automatically when holding enough $MACO.</p>
-        </div>
-        <div class="card">
-          <i class="fa-solid fa-shield-heart"></i>
-          <h3>Passive Perks</h3>
-          <p>Holding $MACO unlocks badges and reduces platform fees.</p>
-        </div>
-        <div class="card">
-          <i class="fa-solid fa-lock"></i>
-          <h3>Security</h3>
-          <p>Automated crypto payments secured by smart contracts.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section" id="cta">
-      <h2>Ready to get started?</h2>
-      <a href="#" class="cta-button large">Launch Macahoo</a>
-    </section>
-  </main>
+  <section class="beta" id="beta">
+    <h2 id="betaTitle">🚀 Bêta bientôt disponible</h2>
+    <p id="betaText">Participe à la version de test de Macahoo en avant-première et aide-nous à construire la meilleure marketplace communautaire !</p>
+    <form class="beta-form">
+      <input type="email" placeholder="Ton adresse email" id="emailInput" required />
+      <button type="submit" class="cta-button" id="subscribeBtn">S’inscrire à la bêta</button>
+    </form>
+    <p id="disclaimer">Un lien d’inscription te sera envoyé par e-mail ou via Discord.</p>
+  </section>
 
   <footer>
-    <p>© 2025 Macahoo. Built for community-first marketplaces.</p>
+    <p>© 2025 Macahoo – Tous droits réservés</p>
     <div class="socials">
       <a href="#"><i class="fab fa-x-twitter"></i></a>
       <a href="#"><i class="fab fa-discord"></i></a>
     </div>
   </footer>
+
+  <script src="lang.js"></script>
 </body>
 </html>
