@@ -1,0 +1,14 @@
+
+/* styles.css */
+body { margin: 0; padding: 0; background: #0d1b2a; color: #e0e0e0; font-family: Arial, sans-serif; }
+header { display: flex; align-items: center; justify-content: space-between; background: #152a3a; padding: 20px; }
+header .branding { display: flex; align-items: center; }
+header h1 { font-size: 24px; margin: 0; color: #fff; }
+header .logo, header .branding img.phone { width: 60px; height: 60px; margin-left: 20px; }
+nav { display: flex; justify-content: space-between; align-items: center; background: #1a2636; padding: 10px 20px; }
+nav .links a { margin-right: 15px; font-weight: bold; }
+nav select { background: #152a3a; color: #e0e0e0; border: none; padding: 5px; }
+section { max-width: 900px; margin: 20px auto; background: #1a2636; padding: 30px 20px; border-radius: 8px; }
+h2 { color: #1fb6ff; margin-bottom: 10px; }
+section p, section ul { margin-bottom: 20px; }
+footer { text-align: center; padding: 15px; background: #152a3a; color: #777; }
