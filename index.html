@@ -3,87 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Macahoo – Marketplace propulsée par $MACOO</title>
+  <title data-lang-fr="Macahoo – Powered by NFTs & Crypto" data-lang-en="Macahoo – Powered by NFTs & Crypto">
+    Macahoo – Powered by NFTs & Crypto
+  </title>
+
+  <!-- Font Awesome (free) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pZkpXQqU8u1YlJ5KbDLCrGgxk9jY0yGHaE6ZwO2USnIGyqfgkdCPyk+KTVLsu7tGHFRCZ2GCTfzPG6N0x8+aUg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="branding">
-      <h1 data-lang-fr="Macahoo" data-lang-en="Macahoo">Macahoo</h1>
-      <img src="phone.png" alt="App mobile" class="phone">
+    <h1 data-lang-fr="Macahoo" data-lang-en="Macahoo">
+      <i class="fa-solid fa-m"></i> Macahoo
+    </h1>
+    <div class="social-and-lang">
+      <a href="https://twitter.com/yourhandle" class="social"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://discord.gg/your-invite" class="social"><i class="fa-brands fa-discord"></i></a>
+      <select id="lang-switch">
+        <option value="fr">FR</option>
+        <option value="en">EN</option>
+      </select>
     </div>
-    <img src="logo.png" alt="Logo Macahoo" class="logo">
   </header>
-  <nav>
-    <div class="links">
-      <a href="#concept" data-lang-fr="Concept" data-lang-en="Concept">Concept</a>
-      <a href="#token" data-lang-fr="Token $MACOO" data-lang-en="Token $MACOO">Token $MACOO</a>
-      <a href="#staking" data-lang-fr="NFT de Staking" data-lang-en="Staking NFTs">NFT de Staking</a>
-      <a href="#badges" data-lang-fr="Badges Soulbound" data-lang-en="Soulbound Badges">Badges Soulbound</a>
-      <a href="#utilite" data-lang-fr="Utilité App" data-lang-en="App Utility">Utilité App</a>
-      <a href="#suivez-nous" data-lang-fr="Suivez-nous" data-lang-en="Follow Us">Suivez-nous</a>
-    </div>
-    <select id="lang-switch">
-      <option value="fr">FR</option>
-      <option value="en">EN</option>
-    </select>
-  </nav>
-  <section id="concept">
-    <h2 data-lang-fr="🎮 Concept & Gamification" data-lang-en="🎮 Concept & Gamification">🎮 Concept & Gamification</h2>
-    <ul>
-      <li data-lang-fr="Missions et défis quotidiens pour engager les utilisateurs." data-lang-en="Daily quests and challenges to engage users.">Missions et défis quotidiens pour engager les utilisateurs.</li>
-      <li data-lang-fr="Récompenses en $MACOO pour actions clés (inscription, vente, feedback)." data-lang-en="Rewards in $MACOO for key actions (signup, sale, feedback).">Récompenses en <strong>$MACOO</strong> pour actions clés (inscription, vente, feedback).</li>
-      <li data-lang-fr="Système de niveaux et de missions pour fidéliser et motiver." data-lang-en="Leveling system to retain and motivate.">Système de niveaux et de missions pour fidéliser et motiver.</li>
-    </ul>
-  </section>
-  <section id="token">
-    <h2 data-lang-fr="🪙 Token $MACOO" data-lang-en="🪙 Token $MACOO">🪙 Token $MACOO</h2>
-    <ul>
-      <li data-lang-fr="4 Piliers : Utilité, Demande, Rareté, Confiance." data-lang-en="4 Pillars: Utility, Demand, Scarcity, Trust."><strong>4 Piliers</strong> : Utilité, Demande, Rareté, Confiance.</li>
-      <li data-lang-fr="Tokenomics : 40% Récompenses, 20% Équipe, 15% Trésorerie, 15% Marketing, 10% Liquidité." data-lang-en="Tokenomics: 40% Rewards, 20% Team, 15% Treasury, 15% Marketing, 10% Liquidity."><strong>Tokenomics</strong> : 40% Récompenses, 20% Équipe, 15% Trésorerie, 15% Marketing, 10% Liquidité.</li>
-      <li data-lang-fr="Mécanismes : Burn 5%, Vesting équipe, Pausable." data-lang-en="Mechanics: 5% burn, Team vesting, Pausable."><strong>Mécanismes</strong> : Burn 5%, Vesting équipe, Pausable.</li>
-    </ul>
-  </section>
-  <section id="staking">
-    <h2 data-lang-fr="⛓️ NFTs de Staking (5 Tiers)" data-lang-en="⛓️ Staking NFTs (5 Tiers)">⛓️ NFTs de Staking (5 Tiers)</h2>
-    <ul>
-      <li data-lang-fr="Tier 1 – 7 jours : 12 % APY" data-lang-en="Tier 1 – 7 days: 12% APY">Tier 1 – 7 jours : 12 % APY · <code>ratePerSecond ≈ 0.000000003805</code></li>
-      <li data-lang-fr="Tier 2 – 30 jours : 14 % APY" data-lang-en="Tier 2 – 30 days: 14% APY">Tier 2 – 30 jours : 14 % APY · <code>ratePerSecond ≈ 0.000000004439</code></li>
-      <li data-lang-fr="Tier 3 – 90 jours : 18 % APY" data-lang-en="Tier 3 – 90 days: 18% APY">Tier 3 – 90 jours : 18 % APY · <code>ratePerSecond ≈ 0.000000005707</code></li>
-      <li data-lang-fr="Tier 4 – 180 jours : 22 % APY" data-lang-en="Tier 4 – 180 days: 22% APY">Tier 4 – 180 jours : 22 % APY · <code>ratePerSecond ≈ 0.000000006976</code></li>
-      <li data-lang-fr="Tier 5 – 365 jours : 28 % APY" data-lang-en="Tier 5 – 365 days: 28% APY">Tier 5 – 365 jours : 28 % APY · <code>ratePerSecond ≈ 0.000000008878</code></li>
-    </ul>
-  </section>
-  <section id="badges">
-    <h2 data-lang-fr="🏷️ Badges Soulbound" data-lang-en="🏷️ Soulbound Badges">🏷️ Badges Soulbound</h2>
-    <ul>
-      <li data-lang-fr="Vendeur Sérieux : 0,5 %/mois (6 % annuel)" data-lang-en="Serious Seller: 0.5%/mo (6% yr)">Vendeur Sérieux : 0,5 %/mois (6 % annuel)</li>
-      <li data-lang-fr="Top Vendeur : 1,5 %/mois (18 % annuel)" data-lang-en="Top Seller: 1.5%/mo (18% yr)">Top Vendeur : 1,5 %/mois (18 % annuel)</li>
-      <li data-lang-fr="Vendeur Expert : 3 %/mois (36 % annuel)" data-lang-en="Expert Seller: 3%/mo (36% yr)">Vendeur Expert : 3 %/mois (36 % annuel)</li>
-      <li data-lang-fr="Légende : 5 %/mois (60 % annuel)" data-lang-en="Legend: 5%/mo (60% yr)">Légende : 5 %/mois (60 % annuel)</li>
-      <li data-lang-fr="10 Ventes : 1 %/mois (12 % annuel)" data-lang-en="10 Sales: 1%/mo (12% yr)">10 Ventes : 1 %/mois (12 % annuel)</li>
-      <li data-lang-fr="50 Ventes : 3 %/mois (36 % annuel)" data-lang-en="50 Sales: 3%/mo (36% yr)">50 Ventes : 3 %/mois (36 % annuel)</li>
-    </ul>
-  </section>
-  <section id="utilite">
-    <h2 data-lang-fr="📱 Utilité de l'Application" data-lang-en="📱 App Utility">📱 Utilité de l'Application</h2>
-    <ul>
-      <li data-lang-fr="Application mobile & desktop (pas un site web)" data-lang-en="Mobile & desktop app (not a website)">Application mobile & desktop (pas un site web)</li>
-      <li data-lang-fr="Expérience unifiée : achat, vente, paiements, staking, badges" data-lang-en="Unified experience: buying, selling, payments, staking, badges">Expérience unifiée : achat, vente, paiements, staking, badges</li>
-      <li data-lang-fr="Sécurité : wallet interne chiffré, escrow automatique" data-lang-en="Security: encrypted wallet, automatic escrow">Sécurité : wallet interne chiffré, escrow automatique</li>
-      <li data-lang-fr="Gamification : missions, défis, niveaux, récompenses $MACOO" data-lang-en="Gamification: quests, challenges, levels, $MACOO rewards">Gamification : missions, défis, niveaux, récompenses $MACOO</li>
-      <li data-lang-fr="Écosystème durable : staking NFT et badges pour fidéliser" data-lang-en="Sustainable ecosystem: NFT staking & badges to retain users">Écosystème durable : staking NFT et badges pour fidéliser</li>
-    </ul>
-  </section>
-  <section id="suivez-nous">
-    <h2 data-lang-fr="🔗 Suivez-nous" data-lang-en="🔗 Follow Us">🔗 Suivez-nous</h2>
-    <ul>
-      <li data-lang-fr="Discord : pré-ouverture fin août–septembre" data-lang-en="Discord: pre-launch end Aug–Sept">Discord : pré-ouverture fin août–septembre</li>
-      <li data-lang-fr="Twitter : annonces beta & MAJ" data-lang-en="Twitter: beta & updates announced">Twitter : annonces beta & MAJ</li>
-    </ul>
-  </section>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2 data-lang-fr="L’avenir des marketplaces communautaires, propulsé par les NFTs et la crypto"
+            data-lang-en="The future of community marketplaces, powered by NFTs and crypto">
+          The future of community marketplaces, powered by NFTs and crypto
+        </h2>
+        <p data-lang-fr="Notre vision : révolutionner l'achat/vente peer-to-peer : confiance, récompenses, transparence."
+           data-lang-en="Our vision is to revolutionize peer-to-peer buying and selling by enhancing trust, rewarding participation, and increasing transparency.">
+          Our vision is to revolutionize peer-to-peer buying and selling by enhancing trust, rewarding participation, and increasing transparency.
+        </p>
+        <a href="#" class="btn" data-lang-fr="Pré-inscription Bêta" data-lang-en="Join Beta">Join Beta</a>
+      </div>
+      <div class="hero-image">
+        <img src="hero-placeholder.png" alt="Macahoo app preview">
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features">
+      <h3>
+        <i class="fa-solid fa-lightbulb"></i>
+        <span data-lang-fr="Fonctionnalités clés" data-lang-en="Key Features">Key Features</span>
+      </h3>
+      <div class="grid">
+        <div class="card">
+          <i class="fa-solid fa-certificate fa-2x card-icon"></i>
+          <h4 data-lang-fr="Badges NFT" data-lang-en="NFT Badges">NFT Badges</h4>
+          <p data-lang-fr="Badges non-transférables reflétant votre identité et réputation."
+             data-lang-en="Users earn non-transferable badges that represent identity, reputation, and reliability.">
+            Users earn non-transferable badges that represent identity, reputation, and reliability.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-coins fa-2x card-icon"></i>
+          <h4 data-lang-fr="Token $MACOO" data-lang-en="$MACOO Token">$MACOO Token</h4>
+          <p data-lang-fr="Utilisé pour paiements, boosts, frais & récompenses mensuelles."
+             data-lang-en="Used for payments, boosts, fees, and monthly rewards — including staking benefits.">
+            Used for payments, boosts, fees, and monthly rewards — including staking benefits.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-gamepad fa-2x card-icon"></i>
+          <h4 data-lang-fr="Gamification" data-lang-en="Gamification">Gamification</h4>
+          <p data-lang-fr="Missions & défis pour engager et former les utilisateurs."
+             data-lang-en="Complete missions and earn ranks with challenges designed to engage and educate.">
+            Complete missions and earn ranks with challenges designed to engage and educate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- User Benefits -->
+    <section id="benefits">
+      <h3>
+        <i class="fa-solid fa-gift"></i>
+        <span data-lang-fr="Avantages pour l'utilisateur" data-lang-en="User Benefits">User Benefits</span>
+      </h3>
+      <div class="benefit-grid">
+        <div class="benefit-card">
+          <i class="fa-solid fa-unlock fa-lg"></i>
+          <div>
+            <strong data-lang-fr="Débloquez des fonctionnalités" data-lang-en="Unlock features">Unlock features</strong>
+            <p data-lang-fr="Boosts, privilèges VIP, et plus." data-lang-en="Access listing boosts, VIP privileges and more through platform usage.">
+              Access listing boosts, VIP privileges and more through platform usage.
+            </p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <i class="fa-solid fa-certificate fa-lg"></i>
+          <div>
+            <strong data-lang-fr="Obtenez des badges NFT" data-lang-en="Earn NFT badges">Earn NFT badges</strong>
+            <p data-lang-fr="Badges non-transférables comme système d’évaluation." data-lang-en="Non-transferable badges earned by users serve as a ratings system.">
+              Non-transferable badges earned by users serve as a ratings system.
+            </p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <i class="fa-solid fa-gift fa-lg"></i>
+          <div>
+            <strong data-lang-fr="Récompenses mensuelles" data-lang-en="Monthly rewards">Monthly rewards</strong>
+            <p data-lang-fr="Users with > X $MACOO reçoivent un bonus chaque mois."
+               data-lang-en="Users with > X $MACOO receive a bonus each month.">
+              Users with &gt; X $MACOO receive a bonus each month.
+            </p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <i class="fa-solid fa-chart-line fa-lg"></i>
+          <div>
+            <strong data-lang-fr="Avantages passifs" data-lang-en="Passive benefits">Passive benefits</strong>
+            <p data-lang-fr="Holding > X $MACOO donne badge ou frais réduits." data-lang-en="Holding > X $MACOO grants a free badge or reduced fees.">
+              Holding &gt; X $MACOO grants a free badge or reduced fees.
+            </p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <i class="fa-solid fa-lock fa-lg"></i>
+          <div>
+            <strong data-lang-fr="Sécurité" data-lang-en="Security">Security</strong>
+            <p data-lang-fr="Paiements crypto automatisés et sécurisés." data-lang-en="Automated crypto payments secured by smart contracts.">
+              Automated crypto payments secured by smart contracts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prelaunch & Social -->
+    <section class="prelaunch">
+      <h3>
+        <i class="fa-solid fa-hourglass-start"></i>
+        <span data-lang-fr="Pré-lancement" data-lang-en="Prelaunch">Prelaunch</span>
+      </h3>
+      <p data-lang-fr="L’application n’est pas encore disponible : pré-inscriptions Bêta en août/septembre via Discord."
+         data-lang-en="App not available yet: beta pre-signups open in Aug/Sept via Discord.">
+        App not available yet: beta pre-signups open in Aug/Sept via Discord.
+      </p>
+      <div class="btn-group">
+        <a href="https://discord.gg/your-invite" class="btn discord"><i class="fa-brands fa-discord"></i> Discord</a>
+        <a href="https://twitter.com/yourhandle" class="btn twitter"><i class="fa-brands fa-twitter"></i> Twitter</a>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    <p data-lang-fr="© 2025 Macahoo – Tous droits réservés" data-lang-en="© 2025 Macahoo – All rights reserved">© 2025 Macahoo – Tous droits réservés</p>
+    <p data-lang-fr="© 2025 Macahoo – Tous droits réservés" data-lang-en="© 2025 Macahoo – All rights reserved">
+      © 2025 Macahoo – Tous droits réservés
+    </p>
   </footer>
+
+  <script>
+    // Simple language switcher
+    const switcher = document.getElementById('lang-switch');
+    switcher.addEventListener('change', e => {
+      const lang = e.target.value;
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-lang-fr]').forEach(el => {
+        el.textContent = el.getAttribute(`data-lang-${lang}`);
+      });
+    });
+  </script>
 </body>
 </html>
