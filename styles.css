@@ -1,0 +1,88 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0e0b23;
+  color: #fff;
+}
+
+header {
+  background: #5c4ce5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+section#intro {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+section#beta-test {
+  background: #1b163e;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 16px;
+  margin-top: 60px;
+}
+
+section#beta-test form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+section#beta-test input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+section#beta-test button {
+  width: 100%;
+  padding: 14px;
+  background: #5c4ce5;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.discord-button {
+  margin-top: 30px;
+}
+
+.discord-button a {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #5865F2;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #14122b;
+  margin-top: 60px;
+}
